@@ -14,9 +14,22 @@ body {
   padding: 0;
   font-family: 'Helvetica';
   background-color: var(--bg-color);
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
+
+}
+
+::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+body {
+
+  position: relative;
 
 }
 
@@ -76,6 +89,7 @@ main {
   font-weight: bold;
   border-radius: .3rem;
   border: none;
+  color: #151515
 
 }
 
@@ -184,5 +198,6 @@ footer a:active {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  bottom: 2.4rem;
 
 }
